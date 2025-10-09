@@ -1,0 +1,23 @@
+body {
+  background-color: lightyellow;
+}
+
+h1 {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+
+
+@keyframes rotate-360-cw {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn:active {
+  animation: rotate-360-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
