@@ -1,5 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   background-color: lightyellow;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
@@ -20,4 +34,35 @@ h1 {
 
 .btn:active {
   animation: rotate-360-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ .bento-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      .bento-item {
+        border-radius: 1rem;
+        padding: 2rem;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        transition: transform 0.2s;
+      }
+      .bento-item:hover {
+        transform: scale(1.1);
+      }
+      .bento-about { background-color: #0d6efd; }
+      .bento-blog { background-color: #6610f2; }
+      .bento-gallery { background-color: #198754; }
+      .bento-contact { background-color: #dc3545; }
+
+
+
+
+footer {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }

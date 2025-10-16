@@ -10,44 +10,79 @@
   </head>
 
   <body>
-    <h1>Hello, world!</h1>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand bg-light border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">First Corner on the web</a>
 
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active"href="./index.html">Home Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./aboutme.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./gallery.html">Gallery</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main class="container py-5">
+      <h1 class="text-center mb-4 fw-bold">Welcome to My World</h1>
+      <p class="text-center text-muted mb-5">Explore my profile, blog, and gallery.</p>
+
+      <div class="bento-grid">
+        <a href="./aboutme.html" class="bento-item bento-about text-decoration-none">
+          <h2>👤 About Me</h2>
+          <p>Learn who I am and what I do.</p>
+        </a>
+
+        <a href="./blog.html" class="bento-item bento-blog text-decoration-none">
+          <h2>📝 Blog</h2>
+          <p>Read my latest thoughts.</p>
+        </a>
+
+        <a href="./gallery.html" class="bento-item bento-gallery text-decoration-none">
+          <h2>🖼️ Gallery</h2>
+          <p>Browse my favorite photos and designs.</p>
+        </a>
+
+        <a href="./aboutme.html" class="bento-item bento-contact text-decoration-none">
+          <h2>📬 Contact</h2>
+          <p>Let’s connect and collaborate!</p>
+        </a>
+      </div>
+    </main>
+
+
+
+  <section class="text-center mt-auto">
+  <blockquote class="blockquote text-muted fst-italic">
+    "The best way to predict the future is to create it."
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    — Peter Drucker
+  </figcaption>
+</section>
+
+
+
+<section class="text-center mt-auto mb-5">
+  <h2 class="fw-semibold">Thanks for visiting!</h2>
+  <p class="text-muted">I’m always open to new ideas and collaborations. Feel free to reach out!</p>
+  <a href="./aboutme.html" class="btn btn-primary">Learn More About Me</a>
+</section>
+
+
+
+<footer class="text-center py-4 mt-auto">
+  <p class="mb-0">Built with ❤️ and Bootstrap</p>
+</footer>
     
   </body>
 </html>
