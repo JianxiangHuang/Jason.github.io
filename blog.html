@@ -6,7 +6,28 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <style>
 
+      main h1 {
+        color: #333;
+        text-decoration: none;
+      }
+      .blog-card {
+        border: 2px solid #dee2e6;
+        border-radius: 1rem;
+        background-color: #fffef8;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      }
+      .section-title {
+        border-left: 4px solid #0d6efd;
+        padding-left: 10px;
+        font-weight: 600;
+      }
+    </style>
   </head>
 
   <body>
@@ -30,6 +51,90 @@
     </ul>
   </div>
 </nav>
+
+<main class="container py-5 fade-in">
+      <h1 class="text-center mb-4" style="letter-spacing:0.5px;">AI and the Future of Programming</h1>
+
+      <!-- Responsive header image -->
+      <picture class="d-block text-center mb-4">
+        <img src="images/Coders.jpg" alt="AI programming concept" class="img-fluid rounded shadow" style="max-height:400px; object-fit:cover;">
+      </picture>
+
+      <!-- Blog intro -->
+      <section class="mb-5">
+        <p class="lead text-center">
+          Artificial Intelligence is reshaping the way we write, understand, and even think about code.  
+          In this article, we’ll explore how large language models have evolved from code assistants to autonomous engineers.
+        </p>
+      </section>
+
+      <!-- Blog content -->
+      <article class="blog-card p-4 mb-4">
+        <h2 class="section-title mb-3">The Rise of AI Programming</h2>
+        <p>
+          In 2024, OpenAI invested <strong>$4 billion</strong> to acquire Winnersurf, a leading AI programming startup.  
+          This move reflects a global race to dominate one of the most profitable and competitive areas of AI: software generation.
+        </p>
+        <p>
+          Programming is the perfect playground for AI — unlike human language, it follows strict rules and leaves no room for ambiguity.  
+          This makes it easier for large models to learn patterns and produce valid, executable code.
+        </p>
+      </article>
+
+      <article class="blog-card p-4 mb-4">
+        <h2 class="section-title mb-3">Two Modes of AI Coding</h2>
+        <ul>
+          <li><strong>Copilot Mode:</strong> AI assists human developers, predicting code completions in real time.</li>
+          <li><strong>Agent Mode:</strong> Autonomous systems like <em>Cursor</em> or <em>Windsurf</em> can build entire apps  
+              from natural language instructions.</li>
+        </ul>
+        <p>
+          As Andrej Karpathy calls it, this is <em>“vibe coding”</em> — where humans focus on outcomes,  
+          and AI handles the logic behind the scenes.
+        </p>
+      </article>
+
+      <article class="blog-card p-4 mb-4">
+        <h2 class="section-title mb-3">Challenges Ahead</h2>
+        <ol>
+          <li><strong>Code Quality:</strong> AI often produces functional but unoptimized code.</li>
+          <li><strong>Architecture:</strong> Current AIs are “builders,” not “architects.”  
+              They still rely on human guidance for large-scale system design.</li>
+        </ol>
+      </article>
+
+      <article class="blog-card p-4 mb-4">
+        <h2 class="section-title mb-3">Impact on Learning</h2>
+        <p>
+          AI tools now act as personal mentors. They can instantly explain any snippet, summarize architecture,  
+          or guide beginners through complex repositories. This is making coding education far more accessible.
+        </p>
+      </article>
+
+<article class="blog-card p-4 mb-4">
+  <h2 class="section-title mb-3">Concerns and Hidden Risks</h2>
+  <p>
+    As AI becomes deeply integrated into software development, a growing concern emerges: <strong>overreliance</strong>.  
+    Many developers are beginning to depend on AI assistants for even basic logic and syntax — risking the gradual loss of fundamental coding skills.
+  </p>
+  <p>
+    Another risk lies in <em>transparency and accountability</em>.  
+    AI-generated code can be efficient, yet opaque: when something fails, who truly understands why?  
+    This lack of interpretability could lead to security flaws or unpredictable system behavior.
+  </p>
+  <p>
+    Finally, <strong>intellectual ownership</strong> becomes murky —  
+    if an AI trained on millions of open-source projects writes your code,  
+    who actually owns the result?  
+    Without careful regulation and education, AI programming could shift from empowerment to dependency.
+  </p>
+</article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 mt-auto" style="background:linear-gradient(90deg, #0d6efd, #6610f2); color:white;">
+  <p class="mb-0">© 2025 First Corner on the Web</p>
+    </footer>
   </body>
 </html>
 

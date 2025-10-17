@@ -7,29 +7,134 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+
+      main h1 { color: #333; text-decoration: none; }
+      .card.bento-card { border: 2px solid #dee2e6; border-radius: 1rem; background-color: #fffef8; }
+      .card.bento-card .card-header { font-weight: 600; background: #f8f9fa; }
+      #contact-card a { text-decoration: none; }
+      #contact-card a:hover { text-decoration: underline; }
+    </style>
   </head>
 
   <body>
-<nav class="navbar navbar-expand bg-light border-bottom">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">First Corner on the web</a>
 
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link"href="./index.html">Home Page</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="./aboutme.html">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./blog.html">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./gallery.html">Gallery</a>
-      </li>
+    <nav class="navbar navbar-expand bg-light border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="./index.html">First Corner on the Web</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home Page</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./aboutme.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+
+   <main class="container py-5 fade-in">
+      <h1 class="text-center mb-4" style="letter-spacing:0.5px;">About Me</h1>
+
+      <div class="row g-4">
+
+        <section class="col-12 col-lg-4">
+          <article class="card bento-card h-100">
+            <header class="card-header">Basic Info</header>
+            <div class="card-body">
+<picture class="d-block mb-3 text-center">
+  <img src="images/profile.jpg"
+       class="img-fluid "
+       width="200" height="200"
+       style="border:3px solid #0d6efd;">
+</picture>
+
+              <h2 class="h5 text-center ">JIANXIANG HUANG</h2>
+              <h3 class="h5 text-center ">Jason</h3>
+            </div>
+          </article>
+        </section>
+
+
+        <section class="col-12 col-lg-4">
+          <article class="card bento-card h-100">
+            <header class="card-header">Career & Skills</header>
+            <div class="card-body">
+              <p class="mb-3">
+                Currently pursuing a Master of Science in Computer Science at the University at Albany.
+              </p>
+
+              <h3 class="h6">Education</h3>
+              <ul>
+                <li><strong>University at Albany</strong>
+                  <ul>
+                    <li>B.S. in Computer Science (Summa Cum Laude)</li>
+                    <li>Minor in Economics</li>
+                    <li>GPA: 3.8</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h3 class="h6 mt-3">Key Skills</h3>
+              <ul class="mb-0">
+                <li>Java / Spring Boot</li>
+                <li>Python</li>
+                <li>Linux</li>
+                <li>Database Systems</li>
+                <li>Algorithms & Data Structures</li>
+                <li>JavaScript</li>
+                <li>Large Language Model</li>
+                <li>Machine Learning</li>
+              </ul>
+
+
+            </div>
+          </article>
+        </section>
+
+
+        <div class="col-12 col-lg-4 d-flex flex-column">
+
+
+          <section class="mb-4">
+            <article class="card bento-card h-100">
+              <header class="card-header">Interests & Hobbies</header>
+              <div class="card-body">
+<ul class="mb-0">
+  <li>Sports
+    <ul>
+      <li>Running</li>
+      <li>Fitness</li>
     </ul>
-  </div>
-</nav>
+  </li>
+  <li>Entertainment
+    <ul>
+      <li>Music</li>
+      <li>Reading</li>
+      <li>E-sports Games</li>
+    </ul>
+  </li>
+</ul>
+              </div>
+            </article>
+          </section>
+
+
+          <section id="contact-card">
+            <article class="card bento-card h-100">
+              <header class="card-header">Contact</header>
+              <div class="card-body">
+                <p class="mb-1">Email: <a href="jhuang26@albany.edu">jhuang26@albany.edu</a></p>
+                <a class="btn btn-primary btn-sm me-2" href="https://github.com/JianxiangHuang" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center py-3 mt-auto">
+  <p class="mb-0">© 2025 First Corner on the Web</p>
+    </footer>
   </body>
 </html>
 
